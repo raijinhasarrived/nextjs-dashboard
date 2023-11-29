@@ -8,6 +8,7 @@ export const TouchCheck = () => {
   return (
     <div
       onTouchStart={() => setTouched(true)}
+      onTouchEnd={() => setTouched(false)}
       className={`${
         touched ? 'bg-black' : 'bg-blue-500'
       }  flex h-20 shrink-0 items-end rounded-lg  p-4 md:h-52`}
